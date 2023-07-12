@@ -1,0 +1,517 @@
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Inter font to the body */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #14141A;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #0c0c10;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0c0c10;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #666;
+    font-size: 14px;
+}
+
+.matric_box {
+    background: #26262F;
+    width: 100%;
+    max-width: 437px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.matric_box .box_header {
+    border-bottom: 1px solid #3F3F4F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.matric_box .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.matric_box .actions a {
+    border: 1px solid #3F3F4F;
+    width: 42px;
+    text-align: center;
+    padding: 9px 0 6px 0;
+    transition: all .3s;
+    border-radius: 8px;
+}
+
+.matric_box .actions a:hover {
+    border: 1px solid #ffffff;
+}
+
+.matric_box h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.matric_box .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.matric_box .title .icon {
+    width: 40px;
+    height: 40px;
+    background: #0c0c10;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 100px;
+}
+
+.matric_box .title .icon.advantage_1 {
+    background: #007DC5;
+}
+
+.splitted_view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.markovlaw .team_name {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin: 17px 0 0 0;
+}
+
+.markovlaw .circle1 {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background: #202025;
+    border-radius: 100px;
+    left: 45px;
+    top: 70px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 50px;
+    box-shadow: 0 0 0px 3px #69697B;
+    transition: all .3s;
+}
+
+.markovlaw .circle1:hover,
+.markovlaw .circle2:hover {
+    cursor:pointer;
+    background: #2c2c32;
+}
+
+
+.markovlaw .markovlaw_block {
+    position: relative;
+    height: 200px;
+}
+
+.markovlaw .circle2 {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background: #202025;
+    border-radius: 100px;
+    left: 123px;
+    top: 70px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 50px;
+    box-shadow: 0 0 0px 3px #69697B;
+}
+
+
+.markovlaw .arrow1 {
+    position: absolute;
+    left: 15px;
+    top: 53px;
+}
+
+.markovlaw .arrow2 {
+    position: absolute;
+    left: 80px;
+    top: 73px;
+}
+
+.markovlaw .arrow3 {
+    position: absolute;
+    left: 155px;
+    top: 51px;
+    transform: rotate(-145deg);
+}
+
+.markovlaw .arrow4 {
+    position: absolute;
+    left: 95px;
+    top: 93px;
+}
+
+.markovlaw .param1 {
+    background: #202025;
+    position: absolute;
+    padding: 5px 7px;
+    border-radius: 6px;
+    left: 12px;
+    top: 12px;
+}
+
+.markovlaw .param2 {
+    background: #202025;
+    position: absolute;
+    padding: 5px 7px;
+    border-radius: 6px;
+    left: 81px;
+    top: 32px;
+}
+
+.markovlaw .param3 {
+    background: #202025;
+    position: absolute;
+    padding: 5px 7px;
+    border-radius: 6px;
+    left: 81px;
+    top: 132px;
+}
+
+.markovlaw .param4 {
+    background: #202025;
+    position: absolute;
+    padding: 5px 7px;
+    border-radius: 6px;
+    left: 155px;
+    top: 12px;
+}
+
+.part.advantage {
+    background: #3B3B4A;
+}
+
+.tippy-box {
+    background: #14141A;
+    border: 1px solid #3F3F4F;
+    border-radius: 6px;
+    padding: 0;
+}
+
+.tippy-box .tippy-content {
+    padding: 0;
+}
+
+.tippy-box .tippy-content h5 {
+    font-size: 12px;
+    color: #646479;
+    padding: 10px 10px 0px 10px;
+}
+
+.tippy-box .line {
+    color: #fff;
+    padding: 8px 10px;
+    border-bottom: 1px solid #3F3F4F;
+}
+
+.tippy-box .line .pos {
+    color: #9BFFDB;
+}
+
+.tippy-box .line .neg {
+    color: #E17177;
+}
+
+.matric_box .actions .line a {
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tippy-box .period_selection .line {
+    padding: 12px 10px;
+}
+
+.matric_box .actions .line a:hover {
+    color: #5EBCE9;
+}
+
+.tippy-box[data-placement^=bottom]>.tippy-arrow:before {
+    color: #14141a;
+}
+
+.matric_box .title .icon.advantage_2 {
+    background: #fff;
+}
+
+.split_block {
+    position: relative;
+    height: 200px;
+}
+
+.part .team_name {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin: 17px 0 0 0;
+}
+
+.background_object {
+    width: 120px;
+    height: 11px;
+    background: #101015;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background_object:before {
+    content: '';
+    width: 11px;
+    height: 31px;
+    background: #101015;
+    left: 10px;
+    top: 0px;
+    position: absolute;
+}
+
+.background_object:after {
+    content: '';
+    width: 11px;
+    height: 31px;
+    background: #101015;
+    right: 10px;
+    top: 0px;
+    position: absolute;
+}
+
+.benchplayers .bench {
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+.benchplayers .value {
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    margin: 8px auto -30px auto;
+}
+
+.benchplayers .value span {
+    font-size: 18px;
+}
+
+.benchplayers .extras {
+    position: absolute;
+    font-size: 12px;
+    top: 47px;
+}
+
+.benchplayers .point {
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 36px;
+    margin-left: -4px;
+}
+
+.benchplayers .point:after {
+    content: '';
+    height: 43px;
+    width: 1px;
+    border-left: 1px dashed;
+    position: absolute;
+    left: 4px;
+}
+
+.benchplayers .moy_ligue, .lawlerlaw .moy_ligue {position: absolute;background: #202025;padding: 12px 14px;border-radius: 8px;left: 50%;transform: translateX(-50%);top: 164px;font-size: 14px;display: flex;align-items: center;}
+
+.box_wrapper {
+    position: relative;
+}
+
+span.green_round {
+    background: #74E5C4;
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    display: table;
+    margin-right: 5px;
+}
+
+
+.lawlerlaw .wave {
+  width: 157px;
+  height: 157px;
+  position: relative;
+  border: 0.75em solid #34333a;
+  background: #101015;
+  overflow: hidden;
+  border-radius: 50%;
+  transform: scale(0.65);
+  display: table;
+  margin: -12px auto;
+}
+
+.lawlerlaw .wave span:first-child,
+.lawlerlaw .wave span:last-child {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  top: 50%;
+  left: -20%;
+  transform: translate(-50%, -50%);
+  border-radius: 6rem;
+  border: 1px solid #ffffff73;
+}
+
+.lawlerlaw .wave span:first-child {
+  background: #FD6A26;
+  animation: spinning 10s infinite linear;
+}
+
+.lawlerlaw .wave span:last-child {
+  background: #FD6A2671;
+  animation: spinning2 10s infinite linear;
+}
+
+@keyframes spinning {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0) rotate(570deg);
+  }
+}
+
+@keyframes spinning2 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0) rotate(-720deg);
+  }
+}
+
+.lawlerlaw span.gradient {
+    background: linear-gradient(0deg, #101015, transparent);
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 999;
+    bottom: -4px;
+    opacity: 0.9;
+}
+
+.lawlerlaw_block .value {
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-49%);
+    top: 74px;
+    z-index: 9;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+@media (max-width:470px) {
+    main {
+        padding: 15px;
+    }
+    .markovlaw .team_name {
+        margin: 15px 0 -10px 0;
+    }
+    .matric_box .box_header {
+        padding: 10px 10px;
+    }
+    .box_wrapper {
+        height: auto!important;
+    }
+
+    .markovlaw .splitted_view {
+        grid-template-columns: 1fr;
+    }
+
+    .markovlaw_block {
+        width: 216px;
+        margin: 12px auto;
+        height: 163px!important;
+    }
+    .split_block.benchplayers_block {
+        height: auto;
+    }
+
+    .benchplayers .bench {
+        margin-bottom: 30px;
+    }
+}
