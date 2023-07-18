@@ -75,6 +75,11 @@ footer p {
     font-size: 14px;
 }
 
+.full_view {
+    background: #101015;
+    height: 100%;
+}
+
 .matric_box {
     background: #26262F;
     width: 100%;
@@ -418,7 +423,6 @@ span.green_round {
   overflow: hidden;
   border-radius: 50%;
   transform: scale(0.65);
-  display: table;
   margin: -12px auto;
 }
 
@@ -482,6 +486,54 @@ span.green_round {
     top: 74px;
     z-index: 9;
     text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.section_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px 0;
+}
+
+
+.majeur5 .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+    background: #26262f;
+    width: 100%;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.majeur5 .apexcharts-legend-series {
+    border: 1px solid #3F3F4F;
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 8px;
+    gap: 4px;
+    height: 17px;
+}
+
+.majeur5 .apexcharts-legend-series span {
+    color: #fff!important;
+    font-size: 14px!important;
+}
+
+.majeur5 .full_view {
+    background: #101015;
+    height: 100%;
+    padding: 20px 0 0 0;
+}
+
+.majeur5 .apexcharts-datalabel tspan:last-child {fill: #fff; font-size: 12px;}
+
+div#majeur_chart {
+    min-height: auto!important;
+}
+
+.majeur5 .apexcharts-canvas.apexcharts-theme-light > svg {
+    overflow: visible!important;
 }
 
 @media (max-width:470px) {
