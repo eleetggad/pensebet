@@ -497,7 +497,8 @@ span.green_round {
 }
 
 
-.majeur5 .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+.majeur5 .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom,
+#domicile_exterieur_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
     background: #26262f;
     width: 100%;
     padding: 0;
@@ -506,7 +507,8 @@ span.green_round {
     align-items: center;
 }
 
-.majeur5 .apexcharts-legend-series {
+.majeur5 .apexcharts-legend-series,
+#domicile_exterieur_chart .apexcharts-legend-series {
     border: 1px solid #3F3F4F;
     color: #fff;
     padding: 12px 14px;
@@ -515,12 +517,14 @@ span.green_round {
     height: 17px;
 }
 
-.majeur5 .apexcharts-legend-series span {
+.majeur5 .apexcharts-legend-series span,
+#domicile_exterieur_chart .apexcharts-legend-series span {
     color: #fff!important;
     font-size: 14px!important;
 }
 
-.majeur5 .full_view {
+.majeur5 .full_view,
+#domicile_exterieur_chart  .full_view {
     background: #101015;
     height: 100%;
     padding: 20px 0 0 0;
@@ -528,12 +532,131 @@ span.green_round {
 
 .majeur5 .apexcharts-datalabel tspan:last-child {fill: #fff; font-size: 12px;}
 
-div#majeur_chart {
+div#majeur_chart,
+div#domicile_exterieur_chart {
     min-height: auto!important;
 }
 
 .majeur5 .apexcharts-canvas.apexcharts-theme-light > svg {
     overflow: visible!important;
+}
+
+#domicile_exterieur_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+    background: transparent;
+}
+
+#domicile_exterieur_chart .apexcharts-legend-series {
+    background: #26262f;
+}
+
+.matric_box .actions a.period {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 3px;
+    width: auto;
+    padding: 9px 5px 6px 5px;
+    font-size: 14px;
+    height: 22px;
+}
+
+.matric_box .actions a.period img {
+    margin: -1px 0 0 0;
+}
+
+.switcher a {
+    border: 1px solid #3F3F4F;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 0;
+    gap: 4px;
+    background: #14141A;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.switcher {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.switcher a.active {
+    background: #26262f;
+}
+
+.switcher a:first-child {
+    border-radius: 8px 0 0px 8px;
+}
+
+.switcher a:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.matric_box .box_header.tabs {
+    padding: 0;
+}
+
+.box_header.tabs .tab.title {
+    padding: 10px 20px;
+    width: 100%;
+    background: #26262F;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.box_header.tabs .tab.title.active {
+    background: #1D1D24;
+}
+
+.box_header.tabs .tab.title:hover {
+    background: #3b3b4a;
+}
+
+.box_header.tabs .tab.title h5 {
+    font-size: 16px;
+}
+
+.widget_footer .actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.widget_footer .actions a {
+    display: inline-table;
+}
+
+.widget_footer {
+    padding: 10px 20px;
+}
+
+.widget_footer .actions a.period {
+    padding: 10px 10px;
+}
+
+.widget_footer .pull-right {
+    display: flex;
+    gap: 10px;
+}
+
+.tippy-box .period_selection .line a {
+    width: auto;
+}
+
+#total_pts_chart span.apexcharts-legend-marker {
+    border-radius: 50px!important;
+    height: 9px!important;
+    width: 9px!important;
+    margin-right: 6px;
+}
+
+#total_pts_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+    height: 50px;
+    margin-bottom: -10px;
 }
 
 @media (max-width:470px) {
