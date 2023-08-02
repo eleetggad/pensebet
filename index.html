@@ -204,9 +204,13 @@
                     </div>
                 </div>
                 <div class="box_wrapper">
-                    
+ 
                     <div class="full_view">
-                        
+                       <div class="switcher">
+                            <a href="#" class="per active">Per</a>
+                            <a href="#" class="net">Net rating</a>
+                            <a href="#" class="plus_minus">+/-</a>
+                        </div>
                         <div id="majeur_chart"></div>
                         
                     </div>
@@ -386,7 +390,7 @@
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="assets/apexcharts.min.js"></script>
 <script>
-    
+var $ = jQuery.noConflict();
 // tooltips    
 tippy('.team1 .circle1', {
   content: '<h5>Dallas Mavericks</h5>'+
@@ -518,6 +522,94 @@ plotOptions: {
 
 var chart_majeur = new ApexCharts(document.querySelector("#majeur_chart"), majeur_chart_options);
 chart_majeur.render();
+    
+$('.majeur5 .switcher a').each(function(){
+    $(this).on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        
+        $('#majeur_chart').html('');
+        
+       if ($(this).hasClass('per')) {
+           majeur_chart_options['series'] = [{
+              name: 'Dallas Mavericks',
+              data: [80, 50, 30, 40, 100],
+              color: '#007DC5',
+            }, {
+              name: 'Brooklyn Nets',
+              data: [20, 30, 40, 80, 20],
+              color: '#ffffff', 
+            }];
+           majeur_chart_options['xaxis'] = {
+              categories: ['Ailer Fort', 'Meneur', 'Ailer', 'Pivot', 'Arriere'],
+              labels: {
+                  offsetX: 0,
+                  offsetY: -10,
+                  style: {
+                      colors: ['#007DC5', '#007DC5', '#007DC5', '#ffffff', '#007DC5'],
+                      fontSize: '14px',
+                      cssClass: 'apexcharts-xaxis-label',
+                  },
+              },
+            }
+            var chart_majeur = new ApexCharts(document.querySelector("#majeur_chart"), majeur_chart_options);
+            chart_majeur.render();
+       }
+       if ($(this).hasClass('net')) {
+           majeur_chart_options['series'] = [{
+              name: 'Dallas Mavericks',
+              data: [23, 65, 32, 76, 25],
+              color: '#007DC5',
+            }, {
+              name: 'Brooklyn Nets',
+              data: [34, 65, 24, 87, 67],
+              color: '#ffffff', 
+            }];
+           majeur_chart_options['xaxis'] = {
+              categories: ['Meneur', 'Ailer Fort', 'Arriere', 'Pivot', 'Ailer'],
+              labels: {
+                  offsetX: 0,
+                  offsetY: -10,
+                  style: {
+                      colors: ['#007DC5', '#007DC5', '#007DC5', '#ffffff', '#007DC5'],
+                      fontSize: '14px',
+                      cssClass: 'apexcharts-xaxis-label',
+                  },
+              },
+            }
+            var chart_majeur = new ApexCharts(document.querySelector("#majeur_chart"), majeur_chart_options);
+            chart_majeur.render();
+       }
+        if ($(this).hasClass('plus_minus')) {
+           majeur_chart_options['series'] = [{
+              name: 'Dallas Mavericks',
+              data: [11, 45, 65, 34, 11],
+              color: '#007DC5',
+            }, {
+              name: 'Brooklyn Nets',
+              data: [54, 45, 40, 54, 23],
+              color: '#ffffff', 
+            }];
+           majeur_chart_options['xaxis'] = {
+              categories: ['Ailer Fort', 'Meneur', 'Ailer', 'Pivot', 'Arriere'],
+              labels: {
+                  offsetX: 0,
+                  offsetY: -10,
+                  style: {
+                      colors: ['#007DC5', '#007DC5', '#007DC5', '#ffffff', '#007DC5'],
+                      fontSize: '14px',
+                      cssClass: 'apexcharts-xaxis-label',
+                  },
+              },
+            }
+            var chart_majeur = new ApexCharts(document.querySelector("#majeur_chart"), majeur_chart_options);
+            chart_majeur.render();
+       }
+       $('.majeur5 .switcher a').removeClass('active');
+       $(this).addClass('active');
+    });
+
+});
 // 5 majeur end
     
 // points_off_to_chart chart  
@@ -720,7 +812,7 @@ fill: {
 var dom_ext_chart = new ApexCharts(document.querySelector("#domicile_exterieur_chart"), dom_ext_options);
 dom_ext_chart.render();
    
-var $ = jQuery.noConflict();
+
 $('.domicile_exterieur .switcher a').each(function(){
     $(this).on('click', function(e){
         e.preventDefault();
